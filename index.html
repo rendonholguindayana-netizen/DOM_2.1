@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad 1: DOM</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="inicio">
+  <main class="inicio-contenido">
+    <header class="inicio-portada">
+      <span class="inicio-etiqueta">Taller práctico · JavaScript</span>
+      <h1>Actividad 1: <span>DOM</span></h1>
+      <p>Explora, selecciona y transforma elementos de una página con JavaScript.</p>
+    </header>
+
+    <section class="inicio-descripcion" aria-labelledby="titulo-descripcion">
+      <div class="inicio-numero" aria-hidden="true">01</div>
+      <div>
+        <h2 id="titulo-descripcion">Descripción de la actividad</h2>
+        <p>
+          En esta actividad vas a practicar la manipulación del DOM (Document Object Model)
+          con JavaScript. Vas a trabajar con formularios cuyos campos <strong>no tienen
+          atributos id ni name</strong>, por lo que no podrás usar
+          <code>getElementById</code> ni <code>getElementsByName</code> para acceder a ellos.
+          Deberás resolverlo usando otros métodos de recorrido y selección del DOM, por
+          ejemplo: <code>querySelector</code>, <code>querySelectorAll</code>,
+          <code>children</code>, <code>parentElement</code>, <code>nextElementSibling</code>,
+          <code>closest</code>, posición dentro de un formulario, etc.
+        </p>
+      </div>
+    </section>
+
+  <!--
+    Qué debes entregar en cada ejercicio:
+    1. Crear tu propio archivo CSS y vincularlo en cada página HTML (puede
+       ser el mismo archivo para todas, o uno por página).
+    2. Crear tu propio archivo JavaScript y vincularlo al final del body de
+       cada página.
+    3. En el HTML de cada ejercicio, agregar el atributo onclick a cada
+       botón, indicando la función de tu JS que debe ejecutar.
+    4. En tu JS, usar el DOM (sin id ni name) para leer los valores de los
+       inputs, calcular el resultado y mostrarlo en el input de resultado
+       correspondiente.
+    5. Revisar que los enlaces de este index.html funcionen correctamente
+       hacia cada ejercicio.
+  -->
+
+    <section class="inicio-ejercicios" aria-labelledby="titulo-ejercicios">
+      <div class="inicio-seccion-cabecera">
+        <div>
+          <span class="inicio-etiqueta">Ponlo en práctica</span>
+          <h2 id="titulo-ejercicios">Elige un ejercicio</h2>
+        </div>
+        <span class="inicio-cantidad">05 actividades</span>
+      </div>
+      <ul>
+        <li><a href="calculadora.html"><span>Calculadora de dos números</span><small>Suma, resta, multiplicación y división</small></a></li>
+        <li><a href="venta.html"><span>Total de una venta</span><small>Subtotal, IVA y descuento</small></a></li>
+        <li><a href="promedio.html"><span>Promedio de 3 notas</span><small>Calcula el resultado académico</small></a></li>
+        <li><a href="salario.html"><span>Salario de un empleado</span><small>Calcula el pago correspondiente</small></a></li>
+        <li><a href="otra.html"><span>Presupuesto de un evento</span><small>Organiza y calcula los gastos</small></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!--
+    REQUISITO: debes crear tu propio archivo JS (por ejemplo "index.js")
+    y vincularlo aquí si lo necesitas para esta página.
+    Ejemplo: <script src="index.js"></script>
+  -->
+</body>
+</html>
